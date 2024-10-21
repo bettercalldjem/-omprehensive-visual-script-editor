@@ -1,0 +1,19 @@
+﻿<Window x:Class="ScriptEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Script Editor" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="ScriptCanvas" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button Content="Добавить Начало" CommandParameter="Начало" Click="AddBlock_Click" />
+            <Button Content="Добавить Конец" CommandParameter="Конец" Click="AddBlock_Click" />
+            <Button Content="Добавить Ввод Переменной" CommandParameter="Ввод переменной" Click="AddBlock_Click" />
+            <Button Content="Добавить Условие" CommandParameter="Условие" Click="AddBlock_Click" />
+            <Button Content="Добавить Цикл" CommandParameter="Цикл" Click="AddBlock_Click" />
+            <Button Content="Добавить Соединение" Click="AddConnection_Click" />
+            <Button Content="Удалить Блок" Click="RemoveSelectedBlock_Click" />
+            <Button Content="Выполнить Сценарий" Click="ExecuteScript" />
+        </StackPanel>
+    </Grid>
+</Window>
